@@ -1,7 +1,7 @@
 import React from "react";
-import Navigation from "./Navigation";
 import ContentLeft from "./ContentLeft";
 import ContentRight from "./ContentRight";
+import Navigation from "./Navigation";
 
 const OndiloApp = () => {
   return (
@@ -9,6 +9,7 @@ const OndiloApp = () => {
       <Navigation />
       <div className="d-flex justify-content-between flex-wrap">
         <ContentLeft />
+
         <ContentRight />
       </div>
     </div>

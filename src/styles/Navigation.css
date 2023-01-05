@@ -2,13 +2,13 @@
 .navbar-collapse {
   flex-direction: column;
 }
-.navbar-expand-lg .navbar-nav {
+.navbar-expand-sm .navbar-nav {
   flex-direction: column;
 }
 
 .navbar .container-fluid,
-.navbar-expand-lg .navbar-collapse,
-.navbar-expand-lg .navbar-nav {
+.navbar-expand-sm .navbar-collapse,
+.navbar-expand-sm .navbar-nav {
   flex-direction: column;
   align-items: flex-start;
 }
@@ -22,11 +22,14 @@
 }
 
 @media (max-width: 992px) {
+  .navbar-expand-sm .navbar-nav {
+    flex-direction: row !important;
+  }
   .navbar,
   .navbar-collapse {
-    background: transparent !important;
-    display: flex !important;
-    align-items: flex-start !important;
+    //background: transparent !important;
+    background: black !important;
+    position: absolute !important;
   }
   .navbar-toggler .collapse {
     background: red;
