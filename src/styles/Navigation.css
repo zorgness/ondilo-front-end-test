@@ -1,0 +1,39 @@
+.navbar,
+.navbar-collapse {
+  flex-direction: column;
+}
+.navbar-expand-lg .navbar-nav {
+  flex-direction: column;
+}
+
+.navbar .container-fluid,
+.navbar-expand-lg .navbar-collapse,
+.navbar-expand-lg .navbar-nav {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    width: 12%;
+    height: 100vh;
+    background: black;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar,
+  .navbar-collapse {
+    background: transparent !important;
+    display: flex !important;
+    align-items: flex-start !important;
+  }
+  .navbar-toggler .collapse {
+    background: red;
+    color: red;
+  }
+  .navbar-toggler-icon {
+    background: red;
+    color: red !important;
+  }
+}
