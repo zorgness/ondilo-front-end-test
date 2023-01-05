@@ -1,10 +1,9 @@
 import React from "react";
 import CardDesign from "./Cards/CardDesign";
 
-const Files = () => {
+const Design = () => {
   return (
     <div>
-      <h4>Files</h4>
       <CardDesign />
       <CardDesign />
       <CardDesign />
@@ -12,4 +11,4 @@ const Files = () => {
   );
 };
 
-export default Files;
+export default Design;

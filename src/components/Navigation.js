@@ -1,7 +1,6 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import hamburger from "./../icons/hamburger-white.png";
 
@@ -27,23 +26,20 @@ function Navigation() {
               closeButton
               closeVariant="white"
             ></Offcanvas.Header>
+            <Offcanvas.Title className="mt-3 mx-2">O</Offcanvas.Title>
             <Offcanvas.Body>
-              <Nav className="justify-content-end flex-column flex-grow-1 pe-3">
-                <Nav.Link href="#action1">Home</Nav.Link>
-                <Nav.Link href="#action2">Link</Nav.Link>
-                <NavDropdown
-                  title="Dropdown"
-                  id={`offcanvasNavbarDropdown-expand-${expand}`}
-                >
-                  <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action5">
-                    Something else here
-                  </NavDropdown.Item>
-                </NavDropdown>
+              <Nav
+                className="justify-content-end flex-column flex-grow-1 pe-3 gap-3"
+                style={{ marginTop: "80px" }}
+              >
+                <Nav.Link href="#action1">Profile</Nav.Link>
+                <Nav.Link href="#action2">Schedule</Nav.Link>
+                <Nav.Link href="#action3">Overview</Nav.Link>
+                <Nav.Link href="#action4">Chat</Nav.Link>
+                <Nav.Link href="#action5">Settings</Nav.Link>
+                <Nav.Link href="#action6" style={{ marginTop: "200px" }}>
+                  Logout
+                </Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
