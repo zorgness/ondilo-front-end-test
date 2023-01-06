@@ -1,5 +1,6 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
+import { data } from "../data/dataMeeting";
 
 const thStyle = {
   background: "#fee5df",
@@ -9,6 +10,7 @@ const thStyle = {
 };
 
 const Meeting = () => {
+  console.log(data);
   return (
     <div className="mx-5 my-2">
       <div className="d-flex justify-content-between  align-items-baseline">
@@ -22,9 +24,7 @@ const Meeting = () => {
           </h6>
         </div>
       </div>
-      {/* <div
-        style={{ padding: "16px", background: "#fef9f5", borderRadius: "10px" }}
-      > */}
+
       <Table
         borderless={true}
         style={{ background: "#fef9f5" }}
@@ -33,59 +33,35 @@ const Meeting = () => {
       >
         <thead>
           <tr>
-            <th style={thStyle}>
-              Mon
-              <br />
-              <span>3</span>
-            </th>
-
-            <th style={thStyle}>
-              Tue
-              <br />
-              <span>4</span>
-            </th>
-
-            <th style={thStyle}>
-              Wed
-              <br /> <span>5</span>
-            </th>
-
-            <th style={thStyle}>
-              Thu
-              <br /> <span>6</span>
-            </th>
-
-            <th style={thStyle}>
-              Fri
-              <br /> <span>7</span>
-            </th>
+            {data.map(({ id, day, date }) => {
+              return (
+                <th style={thStyle} key={id}>
+                  {day}
+                  <br />
+                  <span>{date}</span>
+                </th>
+              );
+            })}
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>9:00 AM</td>
-            <td>9:00 AM</td>
-            <td>9:00 AM</td>
-            <td>9:00 AM</td>
-            <td>9:00 AM</td>
+            {data.map(({ id, hours }) => {
+              return <td key={id}>{hours[0] ?? "_"}</td>;
+            })}
           </tr>
           <tr>
-            <td>2:00 PM</td>
-            <td>2:00 PM</td>
-            <td>2:00 PM</td>
-            <td>2:00 PM</td>
-            <td>2:00 PM</td>
+            {data.map(({ id, hours }) => {
+              return <td key={id}>{hours[1] ?? "_"}</td>;
+            })}
           </tr>
           <tr>
-            <td>4:OO PM</td>
-            <td>4:OO PM</td>
-            <td>4:OO PM</td>
-            <td>4:OO PM</td>
-            <td>4:OO PM</td>
+            {data.map(({ id, hours }) => {
+              return <td key={id}>{hours[2] ?? "_"}</td>;
+            })}
           </tr>
         </tbody>
       </Table>
-      {/* </div> */}
     </div>
   );
 };
