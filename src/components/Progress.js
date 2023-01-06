@@ -17,6 +17,7 @@ export const data = {
 
 const Progress = () => {
   ChartJS.register(ArcElement, Tooltip, Legend);
+
   return (
     <div className="mx-5 my-2">
       <div className="d-flex justify-content-between  align-items-baseline">
@@ -41,16 +42,29 @@ const Progress = () => {
             <i class="fa-solid fa-file-pen"></i>
           </div>
         </div>
-        <div style={{ height: "200px", width: "200px" }}>
-          <Doughnut
-            options={{
-              width: "200",
-              height: "200",
-              responsive: true,
-              maintainAspectRatio: true,
-            }}
-            data={data}
-          />
+        <div className="d-flex">
+          <div style={{ height: "180px", width: "180px" }}>
+            <Doughnut
+              options={{
+                responsive: true,
+                maintainAspectRatio: true,
+              }}
+              data={data}
+            />
+          </div>
+          <div className="d-flex flex-column flex-start m-4">
+            <div className="d-flex flex-column">
+              <p style={{ fontSize: "12px" }}>Cartoon Illustration</p>
+
+              <p style={{ fontSize: "8px" }}>Modern storytelling</p>
+            </div>
+
+            <div className="d-flex flex-column">
+              <p style={{ fontSize: "12px" }}>Abstact Pattern</p>
+
+              <p style={{ fontSize: "8px" }}>Geometric shape</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
