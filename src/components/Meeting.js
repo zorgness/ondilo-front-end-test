@@ -12,15 +12,35 @@ const thStyle = {
 const Meeting = () => {
   const handleMouseEnter = (id, e) => {
     console.log(id);
+    const toSelect = document.querySelectorAll(`.col-table${id}`);
+
     e.target.style.background = "#fef9f5";
+
+    toSelect.forEach((element) => {
+      element.style.border = "1px solid black";
+    });
 
     e.target.style.border = "1px solid black";
   };
 
   const handleMouseLeave = (id, e) => {
+    const toSelect = document.querySelectorAll(`.col-table${id}`);
+    toSelect.forEach((element) => {
+      element.style.border = "none";
+    });
     console.log(id);
     e.target.style.background = "#fee5df";
     e.target.style.border = "none";
+  };
+
+  const CellRow = (hours) => {
+    hours.map((hour) => {
+      return (
+        <tr>
+          <td>{hour ?? "_"}l</td>
+        </tr>
+      );
+    });
   };
 
   return (
@@ -49,6 +69,7 @@ const Meeting = () => {
                 <th
                   style={thStyle}
                   key={id}
+                  className={`col-table${id}`}
                   onMouseEnter={(e) => handleMouseEnter(id, e)}
                   onMouseLeave={(e) => handleMouseLeave(id, e)}
                 >
@@ -63,17 +84,29 @@ const Meeting = () => {
         <tbody>
           <tr>
             {data.map(({ id, hours }) => {
-              return <td key={id}>{hours[0] ?? "_"}</td>;
+              return (
+                <td key={id} className={`col-table${id}`}>
+                  {hours[0] ?? "_"}
+                </td>
+              );
             })}
           </tr>
           <tr>
             {data.map(({ id, hours }) => {
-              return <td key={id}>{hours[1] ?? "_"}</td>;
+              return (
+                <td key={id} className={`col-table${id}`}>
+                  {hours[1] ?? "_"}
+                </td>
+              );
             })}
           </tr>
           <tr>
             {data.map(({ id, hours }) => {
-              return <td key={id}>{hours[2] ?? "_"}</td>;
+              return (
+                <td key={id} className={`col-table${id}`}>
+                  {hours[2] ?? "_"}
+                </td>
+              );
             })}
           </tr>
         </tbody>
