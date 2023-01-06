@@ -9,7 +9,7 @@ const Header = () => {
 
       <div>
         <h6>
-          Aug 5, 2021 <i class="fa-solid fa-caret-down"></i>
+          Aug 5, 2021 <i className="fa-solid fa-caret-down"></i>
         </h6>
       </div>
     </div>
