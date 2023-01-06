@@ -40,3 +40,10 @@
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 768px) {
+  .header-row {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+}

@@ -3,7 +3,7 @@ import CardDesign from "./Cards/CardDesign";
 
 const Design = () => {
   return (
-    <div>
+    <div className="mx-5 my-4">
       <CardDesign />
       <CardDesign />
       <CardDesign />
