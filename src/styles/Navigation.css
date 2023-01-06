@@ -16,7 +16,7 @@
 @media (min-width: 992px) {
   .navbar {
     width: 14%;
-    height: 100vh;
+    height: 120vh;
     background: black;
   }
 }
@@ -27,16 +27,15 @@
   }
   .navbar,
   .navbar-collapse {
-    //background: transparent !important;
     background: transparent !important;
     position: absolute !important;
   }
-  .navbar-toggler .collapse {
+  /* .navbar-toggler .collapse {
     background: red;
     color: red;
   }
   .navbar-toggler-icon {
     background: red;
     color: red !important;
-  }
+  } */
 }

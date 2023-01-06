@@ -15,9 +15,17 @@
   height: 80%;
   width: 52px;
   margin-left: 16px;
-  background: #fee5df;
+  /* background: #fee5df; */
   border-radius: 10px;
   color: black;
+}
+
+.card-icon-design {
+  background: #fee5df;
+}
+
+.card-icon-files {
+  background: black;
 }
 
 .card-product h2 {

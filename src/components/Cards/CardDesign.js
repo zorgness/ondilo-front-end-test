@@ -16,7 +16,7 @@ const CardDesign = () => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="card-icon" ref={cardIcon}>
+      <div className="card-icon card-icon-design" ref={cardIcon}>
         <i className="fa-solid fa-palette"></i>
       </div>
       <div className="card-product-infos">
