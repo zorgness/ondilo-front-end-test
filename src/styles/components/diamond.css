@@ -1,0 +1,11 @@
+.diamond-red {
+  color: #ef5731;
+  position: relative;
+}
+
+.diamond-white {
+  font-size: 12px;
+  position: absolute;
+  left: 44px;
+  top: 38px;
+}
