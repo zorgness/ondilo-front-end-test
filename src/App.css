@@ -1,6 +1,8 @@
 @import url("./styles/Navigation.css");
 @import url("./styles/CardDesign.css");
 @import url("./styles/NavTab.css");
+@import url("./styles/components/avatar.css");
+@import url("./styles/components/search.css");
 
 .App {
   text-align: center;
