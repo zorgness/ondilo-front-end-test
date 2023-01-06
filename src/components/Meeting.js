@@ -10,7 +10,19 @@ const thStyle = {
 };
 
 const Meeting = () => {
-  console.log(data);
+  const handleMouseEnter = (id, e) => {
+    console.log(id);
+    e.target.style.background = "#fef9f5";
+
+    e.target.style.border = "1px solid black";
+  };
+
+  const handleMouseLeave = (id, e) => {
+    console.log(id);
+    e.target.style.background = "#fee5df";
+    e.target.style.border = "none";
+  };
+
   return (
     <div className="mx-5 my-2">
       <div className="d-flex justify-content-between  align-items-baseline">
@@ -29,13 +41,17 @@ const Meeting = () => {
         borderless={true}
         style={{ background: "#fef9f5" }}
         className="text-center"
-        hover={true}
       >
         <thead>
           <tr>
             {data.map(({ id, day, date }) => {
               return (
-                <th style={thStyle} key={id}>
+                <th
+                  style={thStyle}
+                  key={id}
+                  onMouseEnter={(e) => handleMouseEnter(id, e)}
+                  onMouseLeave={(e) => handleMouseLeave(id, e)}
+                >
                   {day}
                   <br />
                   <span>{date}</span>
