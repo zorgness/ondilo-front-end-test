@@ -18,7 +18,7 @@ const Meeting = () => {
 
         <div>
           <h6>
-            Aug 3, 2021- Aug 7, 2021 <i class="fa-solid fa-caret-down"></i>
+            Aug 3, 2021- Aug 7, 2021 <i className="fa-solid fa-caret-down"></i>
           </h6>
         </div>
       </div>
