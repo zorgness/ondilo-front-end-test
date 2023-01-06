@@ -1,12 +1,12 @@
 import React from "react";
-import ContentLeft from "./ContentLeft";
-import ContentRight from "./ContentRight";
-import Navigation from "./Navigation";
-import Header from "./Header";
-import Search from "./Search";
+import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import ContentLeft from "./ContentLeft";
+import ContentRight from "./ContentRight";
+import Header from "./Header";
+import Navigation from "./Navigation";
+import Search from "./Search";
 
 const OndiloApp = () => {
   return (

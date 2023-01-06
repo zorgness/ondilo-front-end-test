@@ -1,11 +1,10 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Search = () => {
   return (
     <div className=" d-flex ">
-      <div className="mx-4 my-4">
+      <div className="mx-4 my-4 form-input">
         <Form className="d-flex" id="input-container">
           <i className="fa-solid fa-magnifying-glass"></i>
           <Form.Control
@@ -17,12 +16,18 @@ const Search = () => {
           />
         </Form>
       </div>
-      <div className="mx-4 my-4">
-        <img
-          src="https://thumbs.dreamstime.com/b/female-user-profile-avatar-woman-character-screen-saver-emotions-website-mobile-app-design-vector-199248695.jpg"
-          alt="avatar"
-          className="avatar"
-        />
+
+      <div className="mx-4 my-4 d-flex align-items-center search-mobile-container">
+        <div className="lookup-mobile mx-3">
+          <i className="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div>
+          <img
+            src="https://thumbs.dreamstime.com/b/female-user-profile-avatar-woman-character-screen-saver-emotions-website-mobile-app-design-vector-199248695.jpg"
+            alt="avatar"
+            className="avatar"
+          />
+        </div>
       </div>
     </div>
   );

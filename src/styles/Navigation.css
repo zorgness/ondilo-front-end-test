@@ -28,7 +28,7 @@
   .navbar,
   .navbar-collapse {
     //background: transparent !important;
-    background: black !important;
+    background: transparent !important;
     position: absolute !important;
   }
   .navbar-toggler .collapse {

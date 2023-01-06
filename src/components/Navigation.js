@@ -10,7 +10,12 @@ function Navigation() {
     <>
       <Navbar key={expand} variant="dark" expand={expand} className="mb-3">
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`}>
-          <img src={hamburger} style={{ width: "24px" }} alt="hamburger" />
+          <img
+            src={hamburger}
+            style={{ width: "24px" }}
+            alt="hamburger"
+            className="mx-4 my-4"
+          />
         </Navbar.Toggle>
 
         <Container fluid>
@@ -32,13 +37,29 @@ function Navigation() {
                 className="justify-content-end flex-column flex-grow-1 pe-3 gap-3"
                 style={{ marginTop: "80px" }}
               >
-                <Nav.Link href="#action1">Profile</Nav.Link>
-                <Nav.Link href="#action2">Schedule</Nav.Link>
-                <Nav.Link href="#action3">Overview</Nav.Link>
-                <Nav.Link href="#action4">Chat</Nav.Link>
-                <Nav.Link href="#action5">Settings</Nav.Link>
+                <Nav.Link href="#action1">
+                  <i class="fa-solid fa-user fa-fw"></i>
+                  <span class="mx-1">Profile</span>
+                </Nav.Link>
+                <Nav.Link href="#action2">
+                  <i class="fa-solid fa-calendar-days fa-fw"></i>{" "}
+                  <span class="mx-1">Schedule</span>
+                </Nav.Link>
+                <Nav.Link href="#action3">
+                  <i class="fa-solid fa-chart-column fa-fw"></i>{" "}
+                  <span class="mx-1">Overview</span>
+                </Nav.Link>
+                <Nav.Link href="#action4">
+                  <i class="fa-brands fa-rocketchat fa-fw"></i>{" "}
+                  <span class="mx-1">Chat</span>
+                </Nav.Link>
+                <Nav.Link href="#action5">
+                  <i class="fa-solid fa-gear fa-fw"></i>{" "}
+                  <span class="mx-1">Settings</span>
+                </Nav.Link>
                 <Nav.Link href="#action6" style={{ marginTop: "200px" }}>
-                  Logout
+                  <i class="fa-solid fa-right-from-bracket fa-fw"></i>{" "}
+                  <span class="mx-1">Logout</span>
                 </Nav.Link>
               </Nav>
             </Offcanvas.Body>

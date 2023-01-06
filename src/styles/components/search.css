@@ -11,3 +11,29 @@
 #input-container > input {
   padding-left: 40px;
 }
+
+@media (min-width: 768px) {
+  .form-input {
+    display: block;
+  }
+  .lookup-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-input {
+    display: none;
+  }
+  .lookup-mobile {
+    display: block;
+    margin-left: 40px;
+  }
+  .fa-magnifying-glass {
+    font-size: 24px;
+  }
+  .search-mobile-container {
+    width: 100%;
+    justify-content: end !important;
+  }
+}
