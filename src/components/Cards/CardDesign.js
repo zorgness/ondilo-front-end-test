@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 
-const CardDesign = () => {
+const CardDesign = ({ data }) => {
   const cardIcon = useRef();
 
   const handleMouseEnter = () => {
@@ -10,6 +10,8 @@ const CardDesign = () => {
   const handleMouseLeave = () => {
     cardIcon.current.style.backgroundColor = "#fee5df";
   };
+
+  const { title, icon, start, end, profilesImgUrl } = data;
   return (
     <div
       className="card-product"
@@ -17,31 +19,26 @@ const CardDesign = () => {
       onMouseLeave={handleMouseLeave}
     >
       <div className="card-icon card-icon-design" ref={cardIcon}>
-        <i className="fa-solid fa-palette"></i>
+        <i className={icon}></i>
       </div>
       <div className="card-product-infos">
-        <h2>Product name</h2>
+        <h2>{title}</h2>
         <p>
-          Product description with <strong>relevant info</strong> only.
+          {start} - {end}
         </p>
       </div>
 
-      <div className="card-avatars m-2">
-        <img
-          src="https://source.unsplash.com/random/profile"
-          alt="avatar-profile"
-          className="avatar-card"
-        />
-        <img
-          src="https://source.unsplash.com/random/profile"
-          alt="avatar-profile"
-          className="avatar-card"
-        />
-        <img
-          src="https://source.unsplash.com/random/profile"
-          alt="avatar-profile"
-          className="avatar-card"
-        />
+      <div className="card-avatars">
+        {profilesImgUrl.map((image, index) => {
+          return (
+            <img
+              key={index}
+              src={image}
+              alt="avatar-profile"
+              className="avatar-card"
+            />
+          );
+        })}
       </div>
     </div>
   );

@@ -1,19 +1,7 @@
 import React from "react";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
-
-export const data = {
-  labels: [],
-  datasets: [
-    {
-      label: ["illustration"],
-      data: [35, 65],
-      backgroundColor: ["rgba(255,85,41,255)", "rgba(59,33,50,255)"],
-      borderColor: ["rgba(255,85,41,255)", "rgba(59,33,50,255)"],
-      borderWidth: 1,
-    },
-  ],
-};
+import { data } from "../data/dataProgress";
 
 const Progress = () => {
   ChartJS.register(ArcElement, Tooltip, Legend);
@@ -38,8 +26,8 @@ const Progress = () => {
           </div>
 
           <div className="d-flex">
-            <i class="fa-solid fa-download mx-3"></i>
-            <i class="fa-solid fa-file-pen"></i>
+            <i className="fa-solid fa-download mx-3"></i>
+            <i className="fa-solid fa-file-pen"></i>
           </div>
         </div>
         <div className="d-flex">

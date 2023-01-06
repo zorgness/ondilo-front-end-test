@@ -22,25 +22,13 @@
   border-bottom: 3px solid #555555;
 }
 
-/* .img-slider__container-1 {
-  display: flex;
-  column-gap: 20px;
-  width: 100%;
-  overflow: auto;
-  align-items: center;
-} */
-
 @media (max-width: 768px) {
   .tabs-underlined {
     display: inline-block;
     overflow: scroll;
-    /* overflow-y: hidden; */
-    /* max-width: 100%;
-    margin: 0 0 1em; */
     white-space: nowrap;
   }
   .tabs-underlined li {
-    /* width: 100%; */
     display: inline;
     vertical-align: top;
   }
