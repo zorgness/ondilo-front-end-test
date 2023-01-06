@@ -9,3 +9,12 @@
   left: 44px;
   top: 38px;
 }
+
+@media (max-width: 768px) {
+  .diamond-white {
+    display: none;
+  }
+  .diamond-red {
+    display: none;
+  }
+}

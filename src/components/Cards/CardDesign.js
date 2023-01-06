@@ -2,16 +2,13 @@ import React, { useRef } from "react";
 
 const CardDesign = () => {
   const cardIcon = useRef();
-  const icon = useRef();
 
   const handleMouseEnter = () => {
     cardIcon.current.style.backgroundColor = "white";
-    icon.current.style.color = "black";
   };
 
   const handleMouseLeave = () => {
-    cardIcon.current.style.backgroundColor = "salmon";
-    icon.current.style.color = "white";
+    cardIcon.current.style.backgroundColor = "#fee5df";
   };
   return (
     <div
@@ -20,13 +17,31 @@ const CardDesign = () => {
       onMouseLeave={handleMouseLeave}
     >
       <div className="card-icon" ref={cardIcon}>
-        <i class="fa-solid fa-palette" ref={icon}></i>
+        <i className="fa-solid fa-palette"></i>
       </div>
       <div className="card-product-infos">
         <h2>Product name</h2>
         <p>
           Product description with <strong>relevant info</strong> only.
         </p>
+      </div>
+
+      <div className="card-avatars m-2">
+        <img
+          src="https://source.unsplash.com/random/profile"
+          alt="avatar-profile"
+          className="avatar-card"
+        />
+        <img
+          src="https://source.unsplash.com/random/profile"
+          alt="avatar-profile"
+          className="avatar-card"
+        />
+        <img
+          src="https://source.unsplash.com/random/profile"
+          alt="avatar-profile"
+          className="avatar-card"
+        />
       </div>
     </div>
   );

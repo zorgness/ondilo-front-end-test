@@ -8,7 +8,9 @@ const Header = () => {
       </div>
 
       <div>
-        <h6>Aug 5, 2021</h6>
+        <h6>
+          Aug 5, 2021 <i class="fa-solid fa-caret-down"></i>
+        </h6>
       </div>
     </div>
   );
