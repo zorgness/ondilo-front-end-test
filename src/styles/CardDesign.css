@@ -19,6 +19,9 @@
   border-radius: 10px;
   color: black;
 }
+.card-product i {
+  font-size: 20px;
+}
 
 .card-icon-design {
   background: #fee5df;

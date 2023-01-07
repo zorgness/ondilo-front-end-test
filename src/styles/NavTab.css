@@ -1,21 +1,22 @@
 .tabs-underlined {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  justify-content: between;
 }
 
 .tabs-underlined .tab-underlined {
   color: black;
-  padding: 4px;
-  margin: 8px;
+  /* padding: 8px; */
+  /* margin: 16px; */
   opacity: 0.4;
   cursor: pointer;
   text-decoration: none;
   border-bottom: 4px solid transparent;
 }
 
-.tabs-underlined li {
+/* .tabs-underlined li {
   font-size: 12px;
-}
+} */
 
 .tabs-underlined .tab-underlined.active {
   opacity: 1;
@@ -23,13 +24,7 @@
 }
 
 @media (max-width: 768px) {
-  .tabs-underlined {
-    display: inline-block;
-    overflow: scroll;
-    white-space: nowrap;
-  }
   .tabs-underlined li {
-    display: inline;
-    vertical-align: top;
+    font-size: 12px;
   }
 }

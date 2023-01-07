@@ -23,7 +23,7 @@ const Search = () => {
         </div>
         <div>
           <img
-            src="https://t3.ftcdn.net/jpg/02/85/98/20/360_F_285982046_zzxKDt4O2ntMLBObfqU2bdEovgRclEqa.jpg"
+            src="https://as2.ftcdn.net/v2/jpg/04/41/00/97/1000_F_441009747_IT8Lfot0YFHbzVH6VSPKrxplFTKesed0.jpg"
             alt="avatar"
             className="avatar"
           />
