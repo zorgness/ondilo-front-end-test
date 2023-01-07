@@ -17,7 +17,7 @@ const Files = () => {
 
         <div>
           <h6>
-            View All <i className="fa-solid fa-arrow-right"></i>
+            View all <i className="fa-solid fa-arrow-right"></i>
           </h6>
         </div>
       </div>

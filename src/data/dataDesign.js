@@ -2,7 +2,7 @@ export const data = [
   {
     id: 1,
     icon: "fa-solid fa-palette",
-    title: "Illustration Template",
+    title: "Illustration Templates",
     start: "9:00 AM",
     end: "4:00 PM",
     profilesImgUrl: [
