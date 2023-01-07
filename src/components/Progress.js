@@ -11,7 +11,7 @@ const Progress = () => {
   ChartJS.register(ArcElement, Tooltip, Legend);
 
   return (
-    <div className=" m-4">
+    <div className="m-4">
       <div className="d-flex justify-content-between  align-items-baseline">
         <div>
           <h4>Project Progress</h4>
@@ -23,9 +23,10 @@ const Progress = () => {
       </div>
 
       <div
-        style={{ background: "#f7f7f7", padding: "24px", borderRadius: "10px" }}
+        style={{ background: "#f7f7f7", borderRadius: "10px" }}
+        className="p-3"
       >
-        <div className="d-flex justify-content-between  align-items-baseline">
+        <div className="d-flex justify-content-between  align-items-baseline ">
           <div>
             <h6>Illustration Pattern</h6>
           </div>
@@ -36,28 +37,14 @@ const Progress = () => {
           </div>
         </div>
         <div>
-          {/* <div className="d-flex flex-column flex-start m-4">
-            <div className="d-flex flex-column">
-              <p style={{ fontSize: "12px" }}>Cartoon Illustration</p>
-
-              <p style={{ fontSize: "8px" }}>Modern storytelling</p>
-            </div>
-
-            <div className="d-flex flex-column">
-              <p style={{ fontSize: "12px" }}>Abstact Pattern</p>
-
-              <p style={{ fontSize: "8px" }}>Geometric shape</p>
-            </div>
-          </div> */}
-
-          <div className="d-flex align-items-center">
+          <div className="d-flex align-items-center justify-content-between ">
             {/* <div
               className="avatar d-flex justify-content-center align-items-center"
               style={{ background: "white", verticalAlign: "middle " }}
             >
               <p>35 %</p>
             </div> */}
-            <div style={{ height: "180px", width: "180px" }}>
+            <div className="doughnut-container">
               <Doughnut
                 options={{
                   responsive: true,
@@ -67,27 +54,41 @@ const Progress = () => {
               />
             </div>
 
-            <Container className="mx-4">
+            {/* <Container className="bg-success">
               <Row>
-                {/* <Col>
-                  <p style={{ color: "rgba(255,85,41,255)" }}>.</p>
-                </Col> */}
-                <Col>
-                  <p style={{ fontSize: "12px" }}>Cartoon Illustration</p>
+                <Col className="d-flex justify-content-end bubble-container">
+                  <div className="bubble bubble-orange mt-1"></div>
+                </Col>
+                <Col className="">
+                  <h5 style={{ fontSize: "12px" }}>Cartoon Illustration</h5>
                   <p style={{ fontSize: "8px" }}>Modern storytelling</p>
                 </Col>
               </Row>
               <Row>
-                {/* <Col>
-                  <p style={{ color: "rgba(59,33,50,255)" }}>.</p>
-                </Col> */}
-                <Col>
-                  <p style={{ fontSize: "12px" }}>Abstact Pattern</p>
+                <Col className=" d-flex justify-content-end bubble-container">
+                  <div className="bubble bubble-purple mt-1"></div>
+                </Col>
+                <Col className="">
+                  <h5 style={{ fontSize: "12px" }}>Abstact Pattern</h5>
 
                   <p style={{ fontSize: "8px" }}>Geometric shape</p>
                 </Col>
               </Row>
-            </Container>
+            </Container> */}
+            <div className="">
+              <ul className="doughnut-list">
+                <li>
+                  <h6 style={{ fontSize: "12px" }}>Cartoon Illustration</h6>
+
+                  <p style={{ fontSize: "8px" }}>Modern storytelling</p>
+                </li>
+                <li>
+                  <h6 style={{ fontSize: "12px" }}>Abstact Pattern</h6>
+
+                  <p style={{ fontSize: "8px" }}>Geometric shape</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

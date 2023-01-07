@@ -10,42 +10,35 @@ const thStyle = {
 };
 
 const Meeting = () => {
-  const handleMouseEnter = (id, e) => {
-    console.log(id);
+  const handleMouseEnter = (id) => {
     const toSelect = document.querySelectorAll(`.col-table${id}`);
 
-    e.target.style.background = "#fef9f5";
-
-    toSelect.forEach((element) => {
-      element.style.border = "1px solid black";
+    toSelect.forEach((element, index) => {
+      if (index === 0) {
+        element.style.background = "#fef9f5";
+        element.style.borderStyle = "solid solid none solid ";
+      } else if (index === toSelect.length - 1) {
+        element.style.borderStyle = "none solid solid solid";
+      } else {
+        element.style.borderStyle = "none solid none solid";
+      }
     });
-
-    e.target.style.border = "1px solid black";
   };
 
-  const handleMouseLeave = (id, e) => {
+  const handleMouseLeave = (id) => {
     const toSelect = document.querySelectorAll(`.col-table${id}`);
-    toSelect.forEach((element) => {
+    toSelect.forEach((element, index) => {
+      if (index === 0) {
+        element.style.background = "#fee5df";
+        element.style.border = "none";
+      }
       element.style.border = "none";
-    });
-    console.log(id);
-    e.target.style.background = "#fee5df";
-    e.target.style.border = "none";
-  };
-
-  const CellRow = (hours) => {
-    hours.map((hour) => {
-      return (
-        <tr>
-          <td>{hour ?? "_"}l</td>
-        </tr>
-      );
     });
   };
 
   return (
     <div className="m-4">
-      <div className="d-flex justify-content-between  align-items-baseline">
+      <div className="d-flex justify-content-between  align-items-baseline m-3">
         <div>
           <h4>Meeting</h4>
         </div>
@@ -57,60 +50,79 @@ const Meeting = () => {
         </div>
       </div>
 
-      <Table
-        borderless={true}
-        style={{ background: "#fef9f5" }}
-        className="text-center"
+      <div
+        style={{ background: "#fef9f5", padding: "16px", borderRadius: "10px" }}
       >
-        <thead>
-          <tr>
-            {data.map(({ id, day, date }) => {
-              return (
-                <th
-                  style={thStyle}
-                  key={id}
-                  className={`col-table${id}`}
-                  onMouseEnter={(e) => handleMouseEnter(id, e)}
-                  onMouseLeave={(e) => handleMouseLeave(id, e)}
-                >
-                  {day}
-                  <br />
-                  <span>{date}</span>
-                </th>
-              );
-            })}
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            {data.map(({ id, hours }) => {
-              return (
-                <td key={id} className={`col-table${id}`}>
-                  {hours[0] ?? "_"}
-                </td>
-              );
-            })}
-          </tr>
-          <tr>
-            {data.map(({ id, hours }) => {
-              return (
-                <td key={id} className={`col-table${id}`}>
-                  {hours[1] ?? "_"}
-                </td>
-              );
-            })}
-          </tr>
-          <tr>
-            {data.map(({ id, hours }) => {
-              return (
-                <td key={id} className={`col-table${id}`}>
-                  {hours[2] ?? "_"}
-                </td>
-              );
-            })}
-          </tr>
-        </tbody>
-      </Table>
+        <Table
+          borderless={true}
+          style={{ background: "#fef9f5" }}
+          className="text-center"
+        >
+          <thead>
+            <tr>
+              {data.map(({ id, day, date }) => {
+                return (
+                  <th
+                    style={thStyle}
+                    key={id}
+                    className={`col-table${id}`}
+                    onMouseEnter={() => handleMouseEnter(id)}
+                    onMouseLeave={() => handleMouseLeave(id)}
+                  >
+                    {day}
+                    <br />
+                    <span>{date}</span>
+                  </th>
+                );
+              })}
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              {data.map(({ id, hours }) => {
+                return (
+                  <td
+                    key={id}
+                    className={`col-table${id}`}
+                    onMouseEnter={() => handleMouseEnter(id)}
+                    onMouseLeave={() => handleMouseLeave(id)}
+                  >
+                    {hours[0] ?? "_"}
+                  </td>
+                );
+              })}
+            </tr>
+            <tr>
+              {data.map(({ id, hours }) => {
+                return (
+                  <td
+                    key={id}
+                    className={`col-table${id}`}
+                    onMouseEnter={() => handleMouseEnter(id)}
+                    onMouseLeave={(e) => handleMouseLeave(id, e)}
+                  >
+                    {hours[1] ?? "_"}
+                  </td>
+                );
+              })}
+            </tr>
+            <tr>
+              {data.map(({ id, hours }) => {
+                return (
+                  <td
+                    key={id}
+                    className={`col-table${id}`}
+                    onMouseEnter={() => handleMouseEnter(id)}
+                    onMouseLeave={() => handleMouseLeave(id)}
+                  >
+                    {hours[2] ?? "_"}
+                  </td>
+                );
+              })}
+            </tr>
+          </tbody>
+        </Table>
+      </div>
     </div>
   );
 };
