@@ -3,7 +3,7 @@ import Form from "react-bootstrap/Form";
 
 const Search = () => {
   return (
-    <div className="d-flex align-items-center justify-content-between m-4">
+    <div className="d-flex align-items-center justify-content-between mx-4 mt-4 mb-1">
       <div className=" form-input">
         <Form className="d-flex" id="input-container">
           <i className="fa-solid fa-magnifying-glass"></i>

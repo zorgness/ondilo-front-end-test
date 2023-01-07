@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="d-flex justify-content-between align-items-baseline m-4">
+    <div className="d-flex justify-content-between align-items-baseline mx-4 mt-4 mb-1">
       <div>
         <h2>Schedule</h2>
       </div>
