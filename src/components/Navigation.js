@@ -31,7 +31,7 @@ function Navigation() {
               closeButton
               closeVariant="white"
             ></Offcanvas.Header>
-            <Offcanvas.Title className="mt-3 mx-2">
+            <Offcanvas.Title className="mt-4 mx-2">
               <i className="fa-solid fa-diamond diamond-red"></i>
               <i className="fa-solid fa-diamond diamond-white"></i>
             </Offcanvas.Title>

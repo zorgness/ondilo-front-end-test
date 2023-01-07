@@ -4,7 +4,7 @@ import { data } from "../data/dataDesign";
 
 const Design = () => {
   return (
-    <div className="mx-5 my-2 d-flex flex-column gap-2">
+    <div className="d-flex flex-column gap-2 bg-info">
       {data.map((element) => {
         return <CardDesign key={element.id} data={element} />;
       })}

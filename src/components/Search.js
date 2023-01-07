@@ -3,8 +3,8 @@ import Form from "react-bootstrap/Form";
 
 const Search = () => {
   return (
-    <div className=" d-flex ">
-      <div className="mx-4 my-4 form-input">
+    <div className="d-flex bg-danger align-items-center justify-content-between m-4">
+      <div className=" form-input">
         <Form className="d-flex" id="input-container">
           <i className="fa-solid fa-magnifying-glass"></i>
           <Form.Control
@@ -12,18 +12,18 @@ const Search = () => {
             placeholder="Search"
             className="me-2 input-search bg-light border-0"
             aria-label="Search"
-            style={{ width: "280px" }}
+            style={{ width: "440px" }}
           />
         </Form>
       </div>
 
-      <div className="mx-4 my-4 d-flex align-items-center search-mobile-container">
+      <div className="d-flex align-items-center search-mobile-container">
         <div className="lookup-mobile mx-3">
           <i className="fa-solid fa-magnifying-glass"></i>
         </div>
         <div>
           <img
-            src="https://thumbs.dreamstime.com/b/female-user-profile-avatar-woman-character-screen-saver-emotions-website-mobile-app-design-vector-199248695.jpg"
+            src="https://t3.ftcdn.net/jpg/02/85/98/20/360_F_285982046_zzxKDt4O2ntMLBObfqU2bdEovgRclEqa.jpg"
             alt="avatar"
             className="avatar"
           />

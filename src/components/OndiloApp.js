@@ -10,25 +10,33 @@ import Search from "./Search";
 
 const OndiloApp = () => {
   return (
-    <div className="d-flex">
+    <div className="d-flex bg-info">
       <Navigation />
-      <div className="d-flex flex-column">
-        <Container>
-          <Row className="header-row">
-            <Col>
-              <Header />
-            </Col>
-            <Col>
-              <Search />
-            </Col>
-          </Row>
-        </Container>
+      {/* <div className="d-flex flex-column"> */}
+      <Container>
+        <Row className="header-row">
+          <Col>
+            <Header />
+          </Col>
+          <Col>
+            <Search />
+          </Col>
+        </Row>
+      </Container>
 
-        <div className="d-flex flex-wrap justify-content-center">
-          <ContentLeft />
-          <ContentRight />
-        </div>
-      </div>
+      {/* <div className="d-flex flex-wrap justify-content-center"> */}
+      {/* <Container>
+        <Row>
+          <Col>
+            <ContentLeft />
+          </Col>
+          <Col>
+            <ContentRight />
+          </Col>
+        </Row>
+      </Container> */}
+      {/* </div> */}
+      {/* </div> */}
     </div>
   );
 };

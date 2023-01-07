@@ -6,8 +6,8 @@
 .diamond-white {
   font-size: 12px;
   position: absolute;
-  left: 48px;
-  top: 38px;
+  left: 42px;
+  top: 46px;
 }
 
 @media (max-width: 768px) {

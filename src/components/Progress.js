@@ -11,7 +11,7 @@ const Progress = () => {
   ChartJS.register(ArcElement, Tooltip, Legend);
 
   return (
-    <div className="mx-5 my-2">
+    <div className="bg-warning">
       <div className="d-flex justify-content-between  align-items-baseline">
         <div>
           <h4>Project Progress</h4>
