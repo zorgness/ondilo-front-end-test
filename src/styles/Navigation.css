@@ -13,6 +13,15 @@
   align-items: flex-start;
 }
 
+.fa-solid.fa-chart-simple {
+  font-size: 24px;
+  transform: scale(-1, 1) rotate(90deg);
+}
+
+#offcanvasNavbar-expand-sm {
+  width: 68% !important;
+}
+
 @media (min-width: 992px) {
   .navbar {
     width: 14%;

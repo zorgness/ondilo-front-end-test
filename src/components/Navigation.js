@@ -2,7 +2,6 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import hamburger from "./../icons/hamburger-white.png";
 
 function Navigation() {
   const expand = "sm";
@@ -10,12 +9,7 @@ function Navigation() {
     <>
       <Navbar key={expand} variant="dark" expand={expand} className="mb-3">
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`}>
-          <img
-            src={hamburger}
-            style={{ width: "24px" }}
-            alt="hamburger"
-            className="mx-4 my-4"
-          />
+          <i class="fa-solid fa-chart-simple text-dark m-4"></i>
         </Navbar.Toggle>
 
         <Container fluid>
