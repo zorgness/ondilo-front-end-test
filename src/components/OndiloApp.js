@@ -12,7 +12,7 @@ const OndiloApp = () => {
   return (
     <div className="d-flex bg-info">
       <Navigation />
-      {/* <div className="d-flex flex-column"> */}
+
       <Container>
         <Row className="header-row">
           <Col>
@@ -31,20 +31,6 @@ const OndiloApp = () => {
           </Col>
         </Row>
       </Container>
-
-      {/* <div className="d-flex flex-wrap justify-content-center"> */}
-      {/* <Container>
-        <Row>
-          <Col>
-            <ContentLeft />
-          </Col>
-          <Col>
-            <ContentRight />
-          </Col>
-        </Row>
-      </Container> */}
-      {/* </div> */}
-      {/* </div> */}
     </div>
   );
 };
