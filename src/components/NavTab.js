@@ -2,7 +2,7 @@ import React from "react";
 
 const NavTab = () => {
   return (
-    <div className="bg-primary m-4">
+    <div className="m-4">
       <ul className="list-inline tabs-underlined">
         <li>
           <a href="/" className="tab-underlined active">

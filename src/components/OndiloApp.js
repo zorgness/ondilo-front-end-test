@@ -10,7 +10,7 @@ import Search from "./Search";
 
 const OndiloApp = () => {
   return (
-    <div className="d-flex bg-info">
+    <div className="d-flex">
       <Navigation />
 
       <Container>

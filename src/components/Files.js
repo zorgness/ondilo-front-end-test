@@ -9,7 +9,7 @@ const Files = () => {
   );
 
   return (
-    <div className="d-flex flex-column gap-2 bg-success m-4">
+    <div className="d-flex flex-column gap-2 m-4">
       <div className="d-flex justify-content-between  align-items-baseline">
         <div>
           <h4>Files</h4>

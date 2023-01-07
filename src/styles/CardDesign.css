@@ -1,6 +1,6 @@
 .card-product {
   overflow: hidden;
-  height: 68px;
+  height: 88px;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: center;
   height: 80%;
-  width: 52px;
+  width: 72px;
   margin-left: 16px;
   /* background: #fee5df; */
   border-radius: 10px;
