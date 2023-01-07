@@ -22,6 +22,14 @@ const OndiloApp = () => {
             <Search />
           </Col>
         </Row>
+        <Row>
+          <Col>
+            <ContentLeft />
+          </Col>
+          <Col>
+            <ContentRight />
+          </Col>
+        </Row>
       </Container>
 
       {/* <div className="d-flex flex-wrap justify-content-center"> */}
