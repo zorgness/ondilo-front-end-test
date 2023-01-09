@@ -21,7 +21,7 @@
 @media (min-width: 992px) {
   .navbar {
     width: 14%;
-    height: 120vh;
+    height: 100vh;
     background: black;
   }
 }
@@ -35,7 +35,7 @@
     background: transparent !important;
     position: absolute !important;
   }
-  #offcanvasNavbar-expand-sm {
+  #offcanvasNavbar-expand-lg {
     width: 68% !important;
   }
 }

@@ -7,7 +7,7 @@ const Progress = () => {
   ChartJS.register(ArcElement, Tooltip, Legend);
 
   return (
-    <div className="m-4">
+    <div className="mx-4" style={{ marginTop: "46px" }}>
       <div className="projet-title-container d-flex justify-content-between  align-items-baseline">
         <div>
           <h4>Project Progress</h4>
@@ -21,11 +21,11 @@ const Progress = () => {
       <div className="projet-title-container-mobile d-flex justify-content-between  align-items-baseline">
         <div className="d-flex  align-items-baseline">
           <h4>Progress</h4>
-          <p className="mx-2 text-secondary">Illustration Template</p>
+          <p className="mx-3 text-secondary">Illustration Template</p>
         </div>
 
         <div>
-          <i className="fa-solid fa-file-pen "></i>
+          <i className="fa-solid fa-square-pen"></i>
         </div>
       </div>
 
@@ -37,7 +37,7 @@ const Progress = () => {
 
           <div className="d-flex ">
             <i className="fa-solid fa-download mx-3"></i>
-            <i className="fa-solid fa-file-pen "></i>
+            <i className="fa-solid fa-square-pen"></i>
           </div>
         </div>
         <div>
@@ -58,22 +58,24 @@ const Progress = () => {
               />
             </div>
 
-            <ul className="doughnut-list">
-              <li className="li-cartoon">
-                <span className="text-black">
-                  <h6>Cartoon Illustration</h6>
+            <div>
+              <ul className="doughnut-list">
+                <li className="li-cartoon">
+                  <span className="text-black">
+                    <h6>Cartoon Illustration</h6>
 
-                  <p className="text-secondary">Modern storytelling</p>
-                </span>
-              </li>
-              <li className="li-abstract">
-                <span className="text-black">
-                  <h6>Abstact Pattern</h6>
+                    <p className="text-secondary">Modern storytelling</p>
+                  </span>
+                </li>
+                <li className="li-abstract">
+                  <span className="text-black">
+                    <h6>Abstact Pattern</h6>
 
-                  <p className="text-secondary">Geometric Shapes</p>
-                </span>
-              </li>
-            </ul>
+                    <p className="text-secondary">Geometric Shapes</p>
+                  </span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

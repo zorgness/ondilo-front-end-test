@@ -18,14 +18,16 @@ const CardDesign = ({ data }) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="card-icon card-icon-design" ref={cardIcon}>
-        <i className={icon}></i>
-      </div>
-      <div className="card-product-infos">
-        <h2>{title}</h2>
-        <p>
-          {start} - {end}
-        </p>
+      <div className="d-flex align-items-center">
+        <div className="card-icon card-icon-design" ref={cardIcon}>
+          <i className={icon}></i>
+        </div>
+        <div className="card-product-infos">
+          <h2>{title}</h2>
+          <p>
+            {start} - {end}
+          </p>
+        </div>
       </div>
 
       <div className="card-avatars">

@@ -6,13 +6,14 @@
   display: flex;
   align-items: center;
   border-radius: 10px;
+  justify-content: space-between;
 }
 
 .card-product .card-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80%;
+  height: 72px;
   width: 72px;
   margin-left: 16px;
   border-radius: 10px;
@@ -46,19 +47,25 @@
 
 .card-product .card-product-infos {
   padding: 16px;
-  min-width: 320px;
 }
 
 .card-product:hover {
-  background-color: black;
+  background-color: black !important;
   color: white;
 }
 
+.card-avatars {
+  margin-right: 24px;
+}
+
 @media (max-width: 768px) {
+  .card-product:nth-child(2) {
+    background: #fef9f5;
+  }
+  .card-product:nth-child(3) {
+    background: #fee5df;
+  }
   .card-product .card-icon {
     display: none;
-  }
-  .card-product .card-product-infos {
-    min-width: 220px;
   }
 }
