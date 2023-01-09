@@ -27,7 +27,7 @@ const Meeting = () => {
 
     thWrapper.style.background = "#fee5df";
 
-    cellsToSelect.forEach((element, index) => {
+    cellsToSelect.forEach((element) => {
       element.style.border = "2px solid transparent";
     });
   };
