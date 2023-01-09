@@ -35,31 +35,11 @@ const Progress = () => {
         <div>
           <div className="d-flex  justify-content-between align-items-center ">
             <div className="doughnut-container position-relative">
-              <div
-                className="badge avatar position-absolute rounded-circle"
-                style={{
-                  background: "white",
-                  marginTop: "94px",
-                  marginLeft: "-12px",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <p className="text-black mt-3">{data.datasets[0].data[1]}%</p>
+              <div className="badge badge-doughnut badge-65 position-absolute rounded-circle">
+                <p className="text-black mt-2">{data.datasets[0].data[1]}%</p>
               </div>
-              <span
-                className="badge avatar position-absolute rounded-circle "
-                style={{
-                  background: "white",
-                  marginTop: "40px",
-                  marginLeft: "140px",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <p className="text-black mt-3">{data.datasets[0].data[0]}%</p>
+              <span className="badge  badge-doughnut badge-35 position-absolute rounded-circle ">
+                <p className="text-black mt-2">{data.datasets[0].data[0]}%</p>
               </span>
               <Doughnut
                 options={{
