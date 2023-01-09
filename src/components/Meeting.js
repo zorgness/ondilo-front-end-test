@@ -2,20 +2,15 @@ import React from "react";
 import Table from "react-bootstrap/Table";
 import { data } from "../data/dataMeeting";
 
-const thStyle = {
-  background: "#fee5df",
-
-  borderRadius: "10px",
-  padding: "10px 0",
-};
-
 const Meeting = () => {
   const handleMouseEnter = (id) => {
     const toSelect = document.querySelectorAll(`.col-table${id}`);
+    const thWrapper = document.querySelector(`.th-wrapper${id}`);
+
+    thWrapper.style.background = "transparent";
 
     toSelect.forEach((element, index) => {
       if (index === 0) {
-        element.style.background = "#fef9f5";
         element.style.borderStyle = "solid solid none solid ";
       } else if (index === toSelect.length - 1) {
         element.style.borderStyle = "none solid solid solid";
@@ -27,9 +22,12 @@ const Meeting = () => {
 
   const handleMouseLeave = (id) => {
     const toSelect = document.querySelectorAll(`.col-table${id}`);
+    const thWrapper = document.querySelector(`.th-wrapper${id}`);
+
+    thWrapper.style.background = "#fee5df";
+
     toSelect.forEach((element, index) => {
       if (index === 0) {
-        element.style.background = "#fee5df";
         element.style.border = "none";
       }
       element.style.border = "none";
@@ -50,39 +48,22 @@ const Meeting = () => {
         </div>
       </div>
 
-      <Table
-        borderless={true}
-        style={{
-          background: "#fef9f5",
-          borderRadius: "10px",
-          padding: "16px",
-          // borderSpacing: "24px 8px",
-          // borderCollapse: "collapse",
-          // overflow: "hidden",
-          // display: "table",
-        }}
-        className="text-center"
-      >
-        {/* <colgroup>
-          <col class="bg-success"></col>
-          <col span="2" class="bg-info"></col>
-          <col span="2" class="bg-danger"></col>
-        </colgroup> */}
-
+      <Table borderless={true} className="text-center">
         <thead>
           <tr>
             {data.map(({ id, day, date }) => {
               return (
                 <th
-                  style={thStyle}
                   className={`col-table${id}`}
                   key={id}
                   onMouseEnter={() => handleMouseEnter(id)}
                   onMouseLeave={() => handleMouseLeave(id)}
                 >
-                  {day}
-                  <br />
-                  <span>{date}</span>
+                  <div className={`th-wrapper th-wrapper${id}`}>
+                    {day}
+                    <br />
+                    <span>{date}</span>
+                  </div>
                 </th>
               );
             })}

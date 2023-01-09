@@ -9,7 +9,7 @@ function Navigation() {
     <>
       <Navbar key={expand} variant="dark" expand={expand} className="mb-3">
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`}>
-          <i class="fa-solid fa-chart-simple text-dark m-4"></i>
+          <i className="fa-solid fa-chart-simple text-dark m-4"></i>
         </Navbar.Toggle>
 
         <Container fluid>
