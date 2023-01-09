@@ -3,7 +3,7 @@
   width: 180px;
   border-radius: 50%;
   background-color: #fcefe6;
-  padding: 4px;
+  padding: 8px;
 }
 
 .badge-doughnut {
@@ -17,7 +17,7 @@
 
 .badge-35 {
   margin-top: 40px;
-  margin-left: 140px;
+  margin-left: 132px;
 }
 .badge-65 {
   margin-top: 94px;
@@ -32,6 +32,7 @@
   .doughnut-container {
     height: 140px;
     width: 140px;
+    padding: 4px;
   }
   .doughnut-list li span h6 {
     font-size: 12px;
@@ -48,11 +49,11 @@
   }
   .badge-35 {
     margin-top: 24px;
-    margin-left: 100px;
+    margin-left: 98px;
   }
   .badge-65 {
     margin-top: 80px;
-    margin-left: -12px;
+    margin-left: -4px;
   }
 }
 
