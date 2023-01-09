@@ -1,4 +1,5 @@
 import React from "react";
+import Dropdown from "react-bootstrap/Dropdown";
 
 const Header = () => {
   return (
@@ -8,9 +9,21 @@ const Header = () => {
       </div>
 
       <div>
-        <h6>
-          Aug 5, 2021 <i className="fa-solid fa-caret-down"></i>
-        </h6>
+        <Dropdown>
+          <Dropdown.Toggle
+            variant="transparent"
+            className="border-0"
+            id="dropdown-basic"
+          >
+            Aug 5, 2021
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu>
+            <Dropdown.Item href="#/action-1">Aug 5, 2021</Dropdown.Item>
+            <Dropdown.Item href="#/action-2">Aug 6, 2021</Dropdown.Item>
+            <Dropdown.Item href="#/action-3">Aug 7, 2021</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
       </div>
     </div>
   );
