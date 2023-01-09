@@ -7,3 +7,12 @@
 @import url("./styles/components/diamond.css");
 @import url("./styles/components/bubble.css");
 @import url("./styles/components/doughnut.css");
+
+.table {
+  border-collapse: separate;
+  border-spacing: 12px 0;
+}
+
+.table th td {
+  padding: 8px;
+}
