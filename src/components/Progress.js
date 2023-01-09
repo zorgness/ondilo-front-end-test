@@ -21,7 +21,7 @@ const Progress = () => {
       <div className="projet-title-container-mobile d-flex justify-content-between  align-items-baseline">
         <div className="d-flex  align-items-baseline">
           <h4>Progress</h4>
-          <p className="mx-2">Illustration pattern</p>
+          <p className="mx-2 text-secondary">Illustration Template</p>
         </div>
 
         <div>
@@ -63,14 +63,14 @@ const Progress = () => {
                 <span className="text-black">
                   <h6>Cartoon Illustration</h6>
 
-                  <p>Modern storytelling</p>
+                  <p className="text-secondary">Modern storytelling</p>
                 </span>
               </li>
               <li className="li-abstract">
                 <span className="text-black">
                   <h6>Abstact Pattern</h6>
 
-                  <p>Geometric shape</p>
+                  <p className="text-secondary">Geometric Shapes</p>
                 </span>
               </li>
             </ul>

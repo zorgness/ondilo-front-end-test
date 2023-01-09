@@ -6,11 +6,11 @@
 .diamond-white {
   font-size: 12px;
   position: absolute;
-  left: 42px;
+  left: 38px;
   top: 46px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .diamond-white {
     display: none;
   }

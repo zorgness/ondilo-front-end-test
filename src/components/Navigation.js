@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 
 function Navigation() {
-  const expand = "sm";
+  const expand = "lg";
   return (
     <>
       <Navbar key={expand} variant="dark" expand={expand} className="mb-3">
@@ -13,8 +13,6 @@ function Navigation() {
         </Navbar.Toggle>
 
         <Container fluid>
-          {/* <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand> */}
-
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-${expand}`}
             aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}

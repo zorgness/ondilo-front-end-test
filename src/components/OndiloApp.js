@@ -22,7 +22,7 @@ const OndiloApp = () => {
             <Search />
           </Col>
         </Row>
-        <Row>
+        <Row lg={2}>
           <Col>
             <ContentLeft />
           </Col>
