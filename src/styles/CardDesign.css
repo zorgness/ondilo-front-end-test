@@ -15,7 +15,6 @@
   height: 80%;
   width: 72px;
   margin-left: 16px;
-  /* background: #fee5df; */
   border-radius: 10px;
   color: black;
 }
@@ -47,7 +46,7 @@
 
 .card-product .card-product-infos {
   padding: 16px;
-  min-width: 360px;
+  min-width: 320px;
 }
 
 .card-product:hover {

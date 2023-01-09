@@ -9,8 +9,8 @@ const Files = () => {
   );
 
   return (
-    <div className="d-flex flex-column gap-2 m-4">
-      <div className="d-flex justify-content-between  align-items-baseline">
+    <div className="d-flex flex-column  m-4">
+      <div className="d-flex justify-content-between  align-items-baseline mb-1">
         <div>
           <h4>Files</h4>
         </div>
@@ -21,15 +21,17 @@ const Files = () => {
           </h6>
         </div>
       </div>
-      {data.map((element) => {
-        return (
-          <CardFiles
-            key={element.id}
-            data={element}
-            icon={iconsImg[`${element.icon}.png`]}
-          />
-        );
-      })}
+      <div className="d-flex flex-column gap-3">
+        {data.map((element) => {
+          return (
+            <CardFiles
+              key={element.id}
+              data={element}
+              icon={iconsImg[`${element.icon}.png`]}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

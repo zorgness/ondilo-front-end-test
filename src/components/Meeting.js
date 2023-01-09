@@ -34,7 +34,7 @@ const Meeting = () => {
 
   return (
     <div className="m-4">
-      <div className="d-flex justify-content-between  align-items-baseline m-3">
+      <div className="d-flex justify-content-between  align-items-baseline mb-1">
         <div>
           <h4>Meeting</h4>
         </div>
