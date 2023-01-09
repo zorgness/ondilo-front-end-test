@@ -1,6 +1,32 @@
 .doughnut-container {
   height: 180px;
   width: 180px;
+  border-radius: 50%;
+  background-color: #fcefe6;
+  padding: 4px;
+}
+
+.badge-doughnut {
+  background: white;
+  margin-top: 40px;
+  margin-left: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge-35 {
+  margin-top: 40px;
+  margin-left: 140px;
+}
+.badge-65 {
+  margin-top: 94px;
+  margin-left: -12px;
+}
+
+.doughnut-list li span P {
+  font-size: 12px;
+  color: grey;
 }
 
 @media (max-width: 768px) {
@@ -8,17 +34,32 @@
     height: 140px;
     width: 140px;
   }
+  .doughnut-list li span h6 {
+    font-size: 12px;
+  }
+  .doughnut-list li span P {
+    font-size: 8px;
+  }
+  .badge-doughnut {
+    width: 36px;
+    height: 36px;
+  }
+  .badge-doughnut p {
+    font-size: 10px;
+  }
+  .badge-35 {
+    margin-top: 24px;
+    margin-left: 100px;
+  }
+  .badge-65 {
+    margin-top: 80px;
+    margin-left: -12px;
+  }
 }
 
-.doughnut-list {
-  list-style: none;
+.li-cartoon {
+  color: rgba(255, 85, 41, 255);
 }
-
-.doughnut-list li::before {
-  content: "\2022";
-  color: red;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
+.li-abstract {
+  color: rgba(59, 33, 50, 255);
 }

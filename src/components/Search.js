@@ -10,9 +10,9 @@ const Search = () => {
           <Form.Control
             type="search"
             placeholder="Search"
-            className="me-2 input-search bg-light border-0"
+            className="me-2 input-search border-0"
             aria-label="Search"
-            style={{ width: "440px" }}
+            style={{ width: "440px", backgroundColor: "#f7f7f7" }}
           />
         </Form>
       </div>
