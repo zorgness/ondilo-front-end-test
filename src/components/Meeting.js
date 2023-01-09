@@ -46,7 +46,7 @@ const Meeting = () => {
         </div>
       </div>
 
-      <Table borderless={true} className="text-center">
+      <Table borderless={true} className="text-center" responsive="sm">
         <thead>
           <tr>
             {data.map(({ id, day, date }) => {
