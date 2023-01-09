@@ -4,15 +4,16 @@ import { data } from "../data/dataMeeting";
 
 const Meeting = () => {
   const handleMouseEnter = (id) => {
-    const toSelect = document.querySelectorAll(`.col-table${id}`);
+    const cellsToSelect = document.querySelectorAll(`.col-table${id}`);
     const thWrapper = document.querySelector(`.th-wrapper${id}`);
 
     thWrapper.style.background = "transparent";
 
-    toSelect.forEach((element, index) => {
+    cellsToSelect.forEach((element, index) => {
+      element.style.border = "2px solid black";
       if (index === 0) {
         element.style.borderStyle = "solid solid none solid ";
-      } else if (index === toSelect.length - 1) {
+      } else if (index === cellsToSelect.length - 1) {
         element.style.borderStyle = "none solid solid solid";
       } else {
         element.style.borderStyle = "none solid none solid";
@@ -21,16 +22,13 @@ const Meeting = () => {
   };
 
   const handleMouseLeave = (id) => {
-    const toSelect = document.querySelectorAll(`.col-table${id}`);
+    const cellsToSelect = document.querySelectorAll(`.col-table${id}`);
     const thWrapper = document.querySelector(`.th-wrapper${id}`);
 
     thWrapper.style.background = "#fee5df";
 
-    toSelect.forEach((element, index) => {
-      if (index === 0) {
-        element.style.border = "none";
-      }
-      element.style.border = "none";
+    cellsToSelect.forEach((element, index) => {
+      element.style.border = "2px solid transparent";
     });
   };
 

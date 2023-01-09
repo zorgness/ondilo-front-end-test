@@ -6,8 +6,12 @@
   padding: 16px;
 }
 
-.table thead th {
+.table thead tr th {
   border-radius: 10px 10px 0 0;
+  border: 2px solid transparent;
+}
+.table tbody tr td {
+  border: 2px solid transparent;
 }
 
 .th-wrapper {
