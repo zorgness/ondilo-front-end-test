@@ -1,11 +1,7 @@
+import { ArcElement, Chart as ChartJS, Legend, Tooltip } from "chart.js";
 import React from "react";
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
 import { data } from "../data/dataProgress";
-import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Badge from "react-bootstrap/Badge";
 
 const Progress = () => {
   ChartJS.register(ArcElement, Tooltip, Legend);
@@ -37,14 +33,34 @@ const Progress = () => {
           </div>
         </div>
         <div>
-          <div className="d-flex align-items-center justify-content-between ">
-            {/* <div
-              className="avatar d-flex justify-content-center align-items-center"
-              style={{ background: "white", verticalAlign: "middle " }}
-            >
-              <p>35 %</p>
-            </div> */}
-            <div className="doughnut-container">
+          <div className="d-flex  justify-content-between align-items-center ">
+            <div className="doughnut-container position-relative">
+              <div
+                className="badge avatar position-absolute rounded-circle"
+                style={{
+                  background: "white",
+                  marginTop: "94px",
+                  marginLeft: "-12px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <p className="text-black mt-3">{data.datasets[0].data[1]}%</p>
+              </div>
+              <span
+                className="badge avatar position-absolute rounded-circle "
+                style={{
+                  background: "white",
+                  marginTop: "40px",
+                  marginLeft: "140px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <p className="text-black mt-3">{data.datasets[0].data[0]}%</p>
+              </span>
               <Doughnut
                 options={{
                   responsive: true,
@@ -54,41 +70,22 @@ const Progress = () => {
               />
             </div>
 
-            {/* <Container className="bg-success">
-              <Row>
-                <Col className="d-flex justify-content-end bubble-container">
-                  <div className="bubble bubble-orange mt-1"></div>
-                </Col>
-                <Col className="">
-                  <h5 style={{ fontSize: "12px" }}>Cartoon Illustration</h5>
-                  <p style={{ fontSize: "8px" }}>Modern storytelling</p>
-                </Col>
-              </Row>
-              <Row>
-                <Col className=" d-flex justify-content-end bubble-container">
-                  <div className="bubble bubble-purple mt-1"></div>
-                </Col>
-                <Col className="">
-                  <h5 style={{ fontSize: "12px" }}>Abstact Pattern</h5>
+            <ul className="doughnut-list">
+              <li className="li-cartoon">
+                <span className="text-black">
+                  <h6>Cartoon Illustration</h6>
 
-                  <p style={{ fontSize: "8px" }}>Geometric shape</p>
-                </Col>
-              </Row>
-            </Container> */}
-            <div className="">
-              <ul className="doughnut-list">
-                <li>
-                  <h6 style={{ fontSize: "12px" }}>Cartoon Illustration</h6>
+                  <p>Modern storytelling</p>
+                </span>
+              </li>
+              <li className="li-abstract">
+                <span className="text-black">
+                  <h6>Abstact Pattern</h6>
 
-                  <p style={{ fontSize: "8px" }}>Modern storytelling</p>
-                </li>
-                <li>
-                  <h6 style={{ fontSize: "12px" }}>Abstact Pattern</h6>
-
-                  <p style={{ fontSize: "8px" }}>Geometric shape</p>
-                </li>
-              </ul>
-            </div>
+                  <p>Geometric shape</p>
+                </span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

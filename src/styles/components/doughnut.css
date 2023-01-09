@@ -1,6 +1,29 @@
 .doughnut-container {
   height: 180px;
   width: 180px;
+  border-radius: 50%;
+  background-color: #fcefe6;
+  padding: 4px;
+
+  /* position: relative; */
+  /* vertical-align: middle; */
+}
+
+/* .doughnut-container canvas {
+  padding: 0;
+  margin: auto;
+  display: block;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+} */
+
+.doughnut-list li span P {
+  font-size: 12px;
+  color: grey;
 }
 
 @media (max-width: 768px) {
@@ -8,17 +31,50 @@
     height: 140px;
     width: 140px;
   }
+  .doughnut-list li span h6 {
+    font-size: 12px;
+  }
+  .doughnut-list li span P {
+    font-size: 8px;
+  }
 }
 
-.doughnut-list {
+.li-cartoon {
+  color: rgba(255, 85, 41, 255);
+}
+.li-abstract {
+  color: rgba(59, 33, 50, 255);
+}
+
+/* .doughnut-list {
   list-style: none;
-}
+} */
 
-.doughnut-list li::before {
-  content: "\2022";
+/* .doughnut-list li::before {
+  content: "•";
   color: red;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  font-size: 28px;
+} */
+
+/* .doughnut-list .li-cartoon::before {
+  content: "\2022";
+  color: rgba(255, 85, 41, 255);
   font-weight: bold;
+  font-size: 28px;
   display: inline-block;
   width: 1em;
   margin-left: -1em;
 }
+
+.doughnut-list .li-abstract::before {
+  content: "\2022";
+  color: rgba(59, 33, 50, 255);
+  font-weight: bold;
+  font-size: 28px;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+} */
