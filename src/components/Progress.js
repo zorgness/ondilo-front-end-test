@@ -7,7 +7,7 @@ const Progress = () => {
   ChartJS.register(ArcElement, Tooltip, Legend);
 
   return (
-    <div className="mx-4" style={{ marginTop: "46px" }}>
+    <div className="mx-4" style={{ marginTop: "38px" }}>
       <div className="projet-title-container d-flex justify-content-between  align-items-baseline">
         <div>
           <h4>Project Progress</h4>
@@ -29,7 +29,7 @@ const Progress = () => {
         </div>
       </div>
 
-      <div className="project-container p-3">
+      <div className="project-container">
         <div className="project-container-header d-flex justify-content-between  align-items-baseline ">
           <div>
             <h6>Illustration Pattern</h6>
@@ -41,7 +41,7 @@ const Progress = () => {
           </div>
         </div>
         <div>
-          <div className="d-flex  justify-content-between align-items-center ">
+          <div className="d-flex  justify-content-between align-items-center">
             <div className="doughnut-container position-relative">
               <div className="badge badge-doughnut badge-65 position-absolute rounded-circle">
                 <p className="text-black mt-2">{data.datasets[0].data[1]}%</p>

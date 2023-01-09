@@ -1,6 +1,10 @@
 .project-container {
   background: #f7f7f7;
   border-radius: 10px;
+  padding: 12px;
+}
+.project-container-header {
+  padding: 8px;
 }
 
 .projet-title-container-mobile {
@@ -11,6 +15,7 @@
 @media (max-width: 768px) {
   .project-container {
     background: transparent;
+    padding: 0;
   }
   .projet-title-container-mobile {
     position: relative;
@@ -23,5 +28,8 @@
   .project-container-header {
     position: absolute;
     visibility: hidden;
+  }
+  .project-container-header {
+    padding: 0;
   }
 }
