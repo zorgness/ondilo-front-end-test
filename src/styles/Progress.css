@@ -1,0 +1,27 @@
+.project-container {
+  background: #f7f7f7;
+  borderradius: 10px;
+}
+
+.projet-title-container-mobile {
+  position: absolute;
+  visibility: hidden;
+}
+
+@media (max-width: 768px) {
+  .project-container {
+    background: transparent;
+  }
+  .projet-title-container-mobile {
+    position: relative;
+    visibility: visible;
+  }
+  .projet-title-container {
+    position: absolute;
+    visibility: hidden;
+  }
+  .project-container-header {
+    position: absolute;
+    visibility: hidden;
+  }
+}

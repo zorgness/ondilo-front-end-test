@@ -8,7 +8,7 @@ const Progress = () => {
 
   return (
     <div className="m-4">
-      <div className="d-flex justify-content-between  align-items-baseline">
+      <div className="projet-title-container d-flex justify-content-between  align-items-baseline">
         <div>
           <h4>Project Progress</h4>
         </div>
@@ -18,18 +18,26 @@ const Progress = () => {
         </div>
       </div>
 
-      <div
-        style={{ background: "#f7f7f7", borderRadius: "10px" }}
-        className="p-3"
-      >
-        <div className="d-flex justify-content-between  align-items-baseline ">
+      <div className="projet-title-container-mobile d-flex justify-content-between  align-items-baseline">
+        <div className="d-flex  align-items-baseline">
+          <h4>Progress</h4>
+          <p className="mx-2">Illustration pattern</p>
+        </div>
+
+        <div>
+          <i className="fa-solid fa-file-pen "></i>
+        </div>
+      </div>
+
+      <div className="project-container p-3">
+        <div className="project-container-header d-flex justify-content-between  align-items-baseline ">
           <div>
             <h6>Illustration Pattern</h6>
           </div>
 
-          <div className="d-flex">
+          <div className="d-flex ">
             <i className="fa-solid fa-download mx-3"></i>
-            <i className="fa-solid fa-file-pen"></i>
+            <i className="fa-solid fa-file-pen "></i>
           </div>
         </div>
         <div>
