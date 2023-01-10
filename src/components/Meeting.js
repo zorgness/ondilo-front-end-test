@@ -1,6 +1,7 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
 import { data } from "../data/dataMeeting";
+import Dropdown from "react-bootstrap/Dropdown";
 
 const Meeting = () => {
   const handleMouseEnter = (id) => {
@@ -40,9 +41,30 @@ const Meeting = () => {
         </div>
 
         <div>
-          <h6>
+          {/* <h6>
             Aug 3, 2021- Aug 7, 2021 <i className="fa-solid fa-caret-down"></i>
-          </h6>
+          </h6> */}
+          <Dropdown>
+            <Dropdown.Toggle
+              variant="transparent"
+              className="border-0"
+              id="dropdown-basic"
+            >
+              Aug 3, 2021- Aug 7, 2021
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <Dropdown.Item href="#/action-1">
+                Aug 3, 2021- Aug 7, 2021{" "}
+              </Dropdown.Item>
+              <Dropdown.Item href="#/action-2">
+                Aug 10, 2021- Aug 14, 2021{" "}
+              </Dropdown.Item>
+              <Dropdown.Item href="#/action-3">
+                Aug 17, 2021- Aug 21, 2021{" "}
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
         </div>
       </div>
 
