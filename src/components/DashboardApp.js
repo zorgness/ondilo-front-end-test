@@ -14,19 +14,19 @@ const OndiloApp = () => {
       <Navigation />
 
       <Container>
-        <Row className="header-row">
-          <Col>
+        <Row className="header-row" lg={2}>
+          <Col className="content-left">
             <Header />
           </Col>
-          <Col>
+          <Col className="content-right">
             <Search />
           </Col>
         </Row>
         <Row lg={2}>
-          <Col>
+          <Col className="content-left">
             <ContentLeft />
           </Col>
-          <Col>
+          <Col className="content-right">
             <ContentRight />
           </Col>
         </Row>

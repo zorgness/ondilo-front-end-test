@@ -1,11 +1,11 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import OndiloApp from "./components/OndiloApp";
+import DashboardApp from "./components/DashboardApp";
 
 function App() {
   return (
     <>
-      <OndiloApp />
+      <DashboardApp />
     </>
   );
 }

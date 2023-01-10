@@ -22,7 +22,7 @@ const Search = () => {
             placeholder="Search"
             className="me-2 input-search border-0"
             aria-label="Search"
-            style={{ width: "440px", backgroundColor: "#f7f7f7" }}
+            style={{ width: "520px", backgroundColor: "#f7f7f7" }}
             ref={inputRef}
           />
         </Form>

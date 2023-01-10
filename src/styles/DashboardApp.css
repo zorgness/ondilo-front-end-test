@@ -1,0 +1,17 @@
+.content-left {
+  width: 45% !important;
+}
+
+.content-right {
+  width: 55% !important;
+}
+
+@media (max-width: 992px) {
+  .content-left {
+    width: 100% !important;
+  }
+
+  .content-right {
+    width: 100% !important;
+  }
+}
