@@ -3,4 +3,8 @@
     display: flex !important;
     flex-direction: column-reverse !important;
   }
+  .header-label {
+    font-size: 28px;
+    font-weight: bolder !important;
+  }
 }

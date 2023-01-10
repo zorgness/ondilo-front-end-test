@@ -41,9 +41,6 @@ const Meeting = () => {
         </div>
 
         <div>
-          {/* <h6>
-            Aug 3, 2021- Aug 7, 2021 <i className="fa-solid fa-caret-down"></i>
-          </h6> */}
           <Dropdown>
             <Dropdown.Toggle
               variant="transparent"

@@ -49,6 +49,7 @@ const Progress = () => {
               <span className="badge  badge-doughnut badge-35 position-absolute rounded-circle ">
                 <p className="text-black mt-2">{data.datasets[0].data[0]}%</p>
               </span>
+
               <Doughnut
                 options={{
                   responsive: true,

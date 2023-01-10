@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="d-flex justify-content-between align-items-baseline mx-4 mt-4 mb-1">
       <div>
-        <h2>Schedule</h2>
+        <h2 className="header-label">Schedule</h2>
       </div>
 
       <div>
