@@ -24,8 +24,10 @@ function Navigation() {
               closeVariant="white"
             ></Offcanvas.Header>
             <Offcanvas.Title className="mt-4 mx-2">
-              <i className="fa-solid fa-diamond diamond-red"></i>
-              <i className="fa-solid fa-diamond diamond-white"></i>
+              <div className="position-absolute">
+                <i className="fa-solid fa-diamond diamond-red"></i>
+                <i className="fa-solid fa-diamond diamond-white"></i>
+              </div>
             </Offcanvas.Title>
             <Offcanvas.Body>
               <Nav
